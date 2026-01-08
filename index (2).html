@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUCKAT - Carnival Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="game-container">
+    <div class="stage-background"></div>
+
+    <div class="curtain left-curtain"></div>
+    <div class="curtain right-curtain"></div>
+
+    <div id="intro-screen">
+      <div class="top-banner">
+          <h1>DUCKAT</h1>
+      </div>
+      <div id="start-btn" onclick="startGame()">¡JUGAR!</div>
+    </div>
+
+    <div id="game-ui">
+      <div id="score-board">PATOS: <span id="duck-counter">20</span></div>
+      
+      <div class="progress-wrapper">
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+          <div class="tick" style="left: 25%"><span>3</span></div>
+          <div class="tick" style="left: 50%"><span>6</span></div>
+          <div class="tick" style="left: 75%"><span>9</span></div>
+          <div class="tick" style="left: 100%"><span>12</span></div>
+        </div>
+        <div class="progress-label">BONUS METER</div>
+      </div>
+
+      <div id="bonus-popup">¡BONO 50%!</div>
+    </div>
+
+    <div class="waves-layer back-layer">
+      <div class="wave wave-back"></div>
+    </div>
+
+    <div id="ducks-layer"></div>
+
+    <div class="waves-layer front-layer">
+      <div class="wave wave-front"></div>
+      <div class="bush bush-left"></div>
+      <div class="bush bush-right"></div>
+    </div>
+
+    <div class="stage-floor"></div>
+
+    <div class="rifle-container" aria-hidden="true">
+      <img class="rifle-image" src="assets/rifles.png" alt="Rifles" draggable="false" />
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
